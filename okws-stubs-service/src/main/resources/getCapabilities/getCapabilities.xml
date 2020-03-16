@@ -1,0 +1,2698 @@
+<?xml version='1.0' encoding='ISO-8859-1' ?>
+<WFS_Capabilities 
+    xmlns="http://www.opengis.net/wfs" 
+    xmlns:wfs="http://www.opengis.net/wfs" 
+    xmlns:ogc="http://www.opengis.net/ogc" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/wfs http://schemas.opengis.net/wfs/1.0.0/WFS-capabilities.xsd" version="1.0.0">
+    <Service>
+        <Name>TT-SIB5:WFS</Name>
+        <Title>TT-SIB Public WFS 5.12.1</Title>
+        <Abstract>Web Feature Service bereitgestellt durch die TT-SIB 5.12.1.</Abstract>
+        <OnlineResource>http://www.novasib.de/</OnlineResource>
+    </Service>
+    <Capability>
+        <Request>
+            <GetCapabilities>
+                <DCPType>
+                    <HTTP>
+                        <Post onlineResource="http://msd-i.dom-admin.mummert.de:20011/publicWFS/WFS"></Post>
+                        <Get onlineResource="http://msd-i.dom-admin.mummert.de:20011/publicWFS/WFS?"></Get>
+                    </HTTP>
+                </DCPType>
+            </GetCapabilities>
+            <DescribeFeatureType>
+                <SchemaDescriptionLanguage>
+                    <XMLSCHEMA></XMLSCHEMA>
+                </SchemaDescriptionLanguage>
+                <DCPType>
+                    <HTTP>
+                        <Post onlineResource="http://msd-i.dom-admin.mummert.de:20011/publicWFS/WFS"></Post>
+                        <Get onlineResource="http://msd-i.dom-admin.mummert.de:20011/publicWFS/WFS?"></Get>
+                    </HTTP>
+                </DCPType>
+            </DescribeFeatureType>
+            <GetFeature>
+                <ResultFormat>
+                    <GML2></GML2>
+                </ResultFormat>
+                <DCPType>
+                    <HTTP>
+                        <Post onlineResource="http://msd-i.dom-admin.mummert.de:20011/publicWFS/WFS"></Post>
+                        <Get onlineResource="http://msd-i.dom-admin.mummert.de:20011/publicWFS/WFS?"></Get>
+                    </HTTP>
+                </DCPType>
+            </GetFeature>
+            <Transaction>
+                <DCPType>
+                    <HTTP>
+                        <Post onlineResource="http://msd-i.dom-admin.mummert.de:20011/publicWFS/WFS"></Post>
+                    </HTTP>
+                </DCPType>
+            </Transaction>
+        </Request>
+    </Capability>
+    <FeatureTypeList>
+        <Operations>
+            <Query></Query>
+        </Operations>
+        <FeatureType>
+            <Name>VI_STRASSENNETZ</Name>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itlwart</Name>
+            <Title>Lärmschutzwall-Art</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itnetzabsart</Name>
+            <Title>Netzabschnittsart</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itkrbebene</Name>
+            <Title>Kreuzungen-Ebenen der Berührung</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbrbkstest</Name>
+            <Title>Bohrkerne-Schnelltest</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbeart</Name>
+            <Title>Betriebseinrichtung-Art</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itebfikalibrier</Name>
+            <Title>Einzelbildfolge-Innere Kalibrierung</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itvspese</Name>
+            <Title>Verkehrssicherheit-Punkteigenschaft/Streckeneigenschaft</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itzstlage</Name>
+            <Title>Zählstellen-Lage</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otkreisverkehr</Name>
+            <Title>Kreisverkehr</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbefestigung</Name>
+            <Title>Busbucht/Busstreifen/Parkstände-Befestigung</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otbaumstwurzel</Name>
+            <Title>Baum (ST) - Im Wurzelbereich</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otkreis</Name>
+            <Title>Verwaltungsbezirk - Kreis</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itvszeitraum</Name>
+            <Title>Verkehrssicherheit-Ermittlungszeitraum</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itfktknoten</Name>
+            <Title>Nutzungs-/Streckenart-Funktion</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbeleuchtlage</Name>
+            <Title>Beleuchtung (SH)-Lage</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itrwbaulasteig</Name>
+            <Title>Baulastträger-Eigentümer</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itzstzaehlart</Name>
+            <Title>Verkehrsstärken-Zählart</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otstatzeich</Name>
+            <Title>Stationszeichen</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbaumlage</Name>
+            <Title>Baum (SH,LP)-Lage</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otgem</Name>
+            <Title>Verwaltungsbezirk - Gemeinde</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otschumwelt</Name>
+            <Title>Umweltrelevante Daten</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itablauflage</Name>
+            <Title>Abläufe-Lage</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otbetrstaette</Name>
+            <Title>Betriebsstätten</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itentwuipflicht</Name>
+            <Title>Entwässerung-Unterhaltungspflicht</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otfussrueck</Name>
+            <Title>Fußgänger-Rückhaltesysteme</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itausuipflicht</Name>
+            <Title>Ausstattung (UI)-Unterhaltungspflicht</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itraschutzart</Name>
+            <Title>Schutzeinrichtungen (UI)-Art</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itvztnlesbar</Name>
+            <Title>Lesbarkeit Tag/Nacht</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>ItabsBm</Name>
+            <Title>Betriebsmerkmal</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itrausbauwert</Name>
+            <Title>Rechtl. Ausbau-Wertstufe</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itzeitspanne</Name>
+            <Title>Verkehrsstärken-Zeitspanne</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otuflaeche</Name>
+            <Title>Unbefestigte Flächen (UI)</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itvzlesbarkeit</Name>
+            <Title>Lesbarkeit</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otdurchlass</Name>
+            <Title>Durchlässe</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbsttart</Name>
+            <Title>Baum (ST)-Art (Tatbestand)</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>GisKante</Name>
+            <Title>Stützstellen</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itnzzusatz</Name>
+            <Title>Teilnetz-Zusatzattribut</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itumstufgrund</Name>
+            <Title>Umstufung-Grund</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itstatartbefest</Name>
+            <Title>Stationszeichen-Art der Befestigung</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itlsaartshs</Name>
+            <Title>Lichtsignalanlagen (SH)-Art</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otidentnt</Name>
+            <Title>identische Netzteile</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itmarkorient</Name>
+            <Title>Markierungen-Orientierung</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itsablunterteil</Name>
+            <Title>Straßenablauf-Unterteil</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otstrecke</Name>
+            <Title>Ortsdurchfahrten</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itaufart</Name>
+            <Title>Aufbaudaten 2.0-Art</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itswtyp</Name>
+            <Title>Schutzwand-Typ</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itlicht</Name>
+            <Title>Unfalldaten-Licht</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itrwinfraart</Name>
+            <Title>Infrastrukturangaben-Art</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itschutzart</Name>
+            <Title>Schutzeinrichtung für Tiere-Art</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itvsrichtung</Name>
+            <Title>Verkehrssicherheit-Fahrtrichtung</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itstrklasse</Name>
+            <Title>Straßenklasse</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otsperrung</Name>
+            <Title>Liste gesperrter Abschnitte</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itstrfkt</Name>
+            <Title>Streifenfunktion</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Ituflnutzartfl</Name>
+            <Title>Unbefestigte Flächen (UI)-Nutzungsart der Fläche</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itdlmaterial</Name>
+            <Title>Durchlässe-hauptsächl. Material</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otvstaerke</Name>
+            <Title>Verkehrsstärken</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itstrbvital</Name>
+            <Title>Straßenbäume-Vitalität</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itschiartneu</Name>
+            <Title>Aufbaudaten-Art (neu)</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itspmaterial</Name>
+            <Title>Schutzplanken-Material</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itrwbaulast</Name>
+            <Title>Baulastträger-Baulast</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otebfeinzelbild</Name>
+            <Title>Einzelbildfolge - Einzelbilder</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itjoobjart</Name>
+            <Title>Joker-Objektart</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itraart</Name>
+            <Title>Rastanlagen-Art</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itvberror</Name>
+            <Title>Verkehrsstärken-Verkehrsbelastung (Error)</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otkreuzung</Name>
+            <Title>Kreuzungen mit Straßen/Wegen</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itnksyst</Name>
+            <Title>Knotenpunktsystem</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itqstrart</Name>
+            <Title>Querschnitte 2.0-Streifenart</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itpstart</Name>
+            <Title>Parkstände-Art</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itausricht106</Name>
+            <Title>Grundrisse-Ausrichtung</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbsartfl</Name>
+            <Title>Betriebsstätten-Art der Fläche</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itverband</Name>
+            <Title>Verbände-Bezeichnung</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itkvgestaltung</Name>
+            <Title>Kreisverkehr-Gestaltung</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itrepklasse</Name>
+            <Title>Reportklasse</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itrwroute</Name>
+            <Title>Radrouten und Klassen-Route</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbesbart</Name>
+            <Title>Beschilderung-Beschilderungsart</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itamt</Name>
+            <Title>Amt</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbahnlage</Name>
+            <Title>Kreuzende Bahnen-Bahnlage</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itufluipflicht</Name>
+            <Title>Unbefestigte Flächen (UI)-Unterhaltungspflicht</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itdlschutzeinr</Name>
+            <Title>Durchlässe-Schutzeinrichtung</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otbahnigkeit</Name>
+            <Title>Bahnigkeit</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>ItabsFkt</Name>
+            <Title>Funktion des Astes</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itkreis</Name>
+            <Title>Kreis</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itot</Name>
+            <Title>Ortsteil</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbseigentum</Name>
+            <Title>Betriebsstätten-Eigentum</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itfahrtricht</Name>
+            <Title>Unfalldaten-Fahrtrichtung</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itausatyp</Name>
+            <Title>Ausstattung (UI)-Ausstattungstyp</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itvzbeleucht</Name>
+            <Title>Beleuchtung</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Ithilagefb</Name>
+            <Title>Hindernisse-Lage</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itauseinheit</Name>
+            <Title>Ausstattung (UI)-Einheit des Aufmasses</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itallglage</Name>
+            <Title>Lage (ASB)</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otgrundriss</Name>
+            <Title>Grundrisse</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itqartober</Name>
+            <Title>Querschnitte 2.0-Art d. Oberfläche</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itupartner</Name>
+            <Title>UI-/UA-Partner</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otamt</Name>
+            <Title>Dienststelle - Amt</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itstrfahrtricht</Name>
+            <Title>Streifenfunktion-Fahrtrichtung</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>GISDELNP</Name>
+            <SRS>NONE</SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itdlartierwechsl</Name>
+            <Title>Durchlässe-Art Tierwechsel</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itknotenart</Name>
+            <Title>Knotenart</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itstrauspktart</Name>
+            <Title>Straßenausstattung (punktuell)-Art</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otbeschild</Name>
+            <Title>Wegweisende Beschilderung</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itsbwkonst</Name>
+            <Title>Sonstige Konstruktion-Konstruktion</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otraschutz</Name>
+            <Title>Schutzeinrichtungen (UI)</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itumweinbaukl</Name>
+            <Title>Aufbau 2.0 - Umweltrelev. Infos-Einbaukl. LAGA</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otprisys</Name>
+            <Title>Netzzuordnung PRISYS</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itauftrnehm</Name>
+            <Title>UIGewerke-Auftragnehmer</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itkompmart</Name>
+            <Title>Kompensationsmaßnahmen-Art</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itumwhydrogeo</Name>
+            <Title>Aufbau 2.0 - Umweltrelev. Infos-Hydrogeolog. günstig</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itobjdetailgrad</Name>
+            <Title>Detaillierungsgrad</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbahneletri</Name>
+            <Title>Kreuzende Bahnen-Elektri.</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itdlprofil</Name>
+            <Title>Durchlässe-Profil</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itebfobjektiv</Name>
+            <Title>Einzelbildfolge-Objektiv</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itlsamasttyp</Name>
+            <Title>Lichtsignalanlagen-Mastentyp</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otziele</Name>
+            <Title>Ziele</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbrbkmisch</Name>
+            <Title>Bohrkerne-Mischgut</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itueberfall</Name>
+            <Title>Übernahme-Fall</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbesart</Name>
+            <Title>Beschilderung-Art</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itdlstadium</Name>
+            <Title>Durchlässe-Stadium</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itvbfaksteig</Name>
+            <Title>Steigungsfaktor</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itebfkamerapos</Name>
+            <Title>Einzelbildfolge-Kameraposition</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itlwfunktion</Name>
+            <Title>Lärmschutzwall-Funktion</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otaufstvor</Name>
+            <Title>Aufstellvorrichtungen</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itwegdisponiert</Name>
+            <Title>Wegeart-Disponiert</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otstrausstr</Name>
+            <Title>Straßenausstattung (streckenbezogen)</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itsablaufsatz</Name>
+            <Title>Straßenablauf-Aufsatz</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itmassart</Name>
+            <Title>Maßnahmen-Art der Maßnahme</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itnkform</Name>
+            <Title>Knotenpunktform</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otausstatt</Name>
+            <Title>Ausstattung (UI)</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itvbfakaen</Name>
+            <Title>Faktor für Änderung des DTV (SV)</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otjoker</Name>
+            <Title>Joker (Netzzuordnung)</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbrbkzuord</Name>
+            <Title>Bohrkerne-Zuordnung</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otleitung</Name>
+            <Title>Leitungen</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Nullpunktort</Name>
+            <Title>Nullpunktort</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itebfaorientier</Name>
+            <Title>Einzelbildfolge-Äußere Orientierung</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otbaulast</Name>
+            <Title>Baulast</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itallgklar</Name>
+            <Title>Allgemeiner Klartext</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itueberlagart</Name>
+            <Title>Überlagerungen-Art</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itebfkalibsatz</Name>
+            <Title>Einzelbildfolge-Kalibrierungsdatensatz</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itapbaumart</Name>
+            <Title>Alleen Plus-Hauptbaumart</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itrwmaengstat</Name>
+            <Title>Mängel-Status</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Oteinzelbaum</Name>
+            <Title>Einzelbaum</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>StimpOrder</Name>
+            <Title>Tabellenliste</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itweslage</Name>
+            <Title>Wassereinleitungsstrecke-Lage</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otebfverwaltung</Name>
+            <Title>Einzelbildfolge - Verwaltung</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itstrbzustaend</Name>
+            <Title>Straßenbäume-Zuständigkeit</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otot</Name>
+            <Title>Verwaltungsbezirk - Ortsteil</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otlaermschutz</Name>
+            <Title>Aktiver Lärmschutz</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itpolzrev</Name>
+            <Title>Polizeirevier</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itschachttyp</Name>
+            <Title>Schacht-Typ</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itvrichtung</Name>
+            <Title>Verkehrsstärken-Verkehrsrichtung</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itgsonderreg</Name>
+            <Title>Geschwindigkeit-Sonderregelung</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itschuart</Name>
+            <Title>Umweltrelevanz-Art</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itquerober</Name>
+            <Title>Querschnitte-Art der Oberfläche</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itzstrichtung</Name>
+            <Title>Zählstellen-Richtung</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itschachtkonus</Name>
+            <Title>Schacht-Angaben zum Konus</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itwegvorherig</Name>
+            <Title>Wegeart-Vorherig</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itrwfuehrung</Name>
+            <Title>Führungsform-Führung</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>GISDEL</Name>
+            <SRS>NONE</SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itvzsichtbar</Name>
+            <Title>Sichtbarkeit</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itltgartdetail</Name>
+            <Title>Leitungen-Art Detail</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itueberlagtyp</Name>
+            <Title>Überlagerungen-Typ</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itschachtaufsatz</Name>
+            <Title>Schacht-Aufsatz</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itazausbau</Name>
+            <Title>Ausbauzustand-Ausbau gegen</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itaufbind1</Name>
+            <Title>Aufbaudaten 2.0-Bindemittel 1</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itjolage</Name>
+            <Title>Joker-Lage</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itrwklasse</Name>
+            <Title>Radrouten und Klassen-Klasse</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itschichta2</Name>
+            <Title>Aufbaudaten-Art 2</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itschichta3</Name>
+            <Title>Aufbaudaten-Art 3</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itzielerichtung</Name>
+            <Title>Ziele-Richtung</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itaufbind2</Name>
+            <Title>Aufbaudaten 2.0-Bindemittel 2</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itart106</Name>
+            <Title>Grundrisse-Art</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itschichta1</Name>
+            <Title>Aufbaudaten-Art 1</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otlrmschutzwall</Name>
+            <Title>Lärmschutzwall</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itaufstvorart</Name>
+            <Title>Aufstellvorrichtungen-Art</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itvzallgzust</Name>
+            <Title>Allgemeiner Zustand</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itqgleise</Name>
+            <Title>Querschnitte 2.0-Gleise</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itkrbauform</Name>
+            <Title>Kreuzungen-Bauform des Anschlusses</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itnalage</Name>
+            <Title>Rastanlagen-Lage</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otstadium</Name>
+            <Title>Stadium</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itkrlage</Name>
+            <Title>Kreuzungen-Lage</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbwstadiumbw</Name>
+            <Title>Bauwerke-Stadium</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itkreuzungzuord</Name>
+            <Title>Kreuzungszuordnung</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itunfalltyp</Name>
+            <Title>Unfalldaten-Unfalltyp</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itwegenummer</Name>
+            <Title>Wegenummer</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itstrausserart</Name>
+            <Title>Straßenausstattung (seriell)-Art</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itschusicher</Name>
+            <Title>Umweltrelevanz-Sicherungsmaßnahmen</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otschutzein</Name>
+            <Title>Schutzeinrichtung für Tiere</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otbauwerke</Name>
+            <Title>Bauwerke</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otbauklasse</Name>
+            <Title>Bauklasse</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itzuklasse</Name>
+            <Title>Zustandsklasse-Klasse</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otapgrad</Name>
+            <Title>Aufrisse (Höhenpunkte)</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itumstrbgrund</Name>
+            <Title>Umstufungs-/Rückbaugrund</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Ituilage</Name>
+            <Title>UIGewerke-Lage</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otentw</Name>
+            <Title>Entwässerungseinrichtungen (UI)</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itrausbauart</Name>
+            <Title>Rechtl. Ausbau-Art</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itentweinheit</Name>
+            <Title>Entwässerung-Einheit des Aufmasses</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otshkmplus</Name>
+            <Title>Kilometrierung</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbflnutzartfl</Name>
+            <Title>Befestigte Flächen (UI)-Nutzungsart der Fläche</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itaufzusatz</Name>
+            <Title>Aufbaudaten 2.0-Zusatzschlüssel</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itzunoart</Name>
+            <Title>Zustandsnote-Art</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otschacht</Name>
+            <Title>Schacht</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbeschgroesse</Name>
+            <Title>Beschilderung (UI)-Größe</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Fahrbez</Name>
+            <Title>Verbotene Fahrbeziehungen</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbeschbeleucht</Name>
+            <Title>Beschilderung (UI)-Beleuchtung</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itmarkmaterial</Name>
+            <Title>Markierungen-Material</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itrwnetzzubed</Name>
+            <Title>Netzzugehörigkeit-Bedeutung</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbahnkoerper</Name>
+            <Title>Kreuzende Bahnen-Bahnkörper</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itnabschildnr</Name>
+            <Title>Nichtamtliche Beschilderung-Schildnummer</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itmarkfkt</Name>
+            <Title>Markierungen-Funktion</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itzugrart</Name>
+            <Title>Zustandsgröße-Art</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>AsbNetzkn</Name>
+            <Title>ASB Netzknoten</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itstrbart</Name>
+            <Title>Straßenbäume-Art</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otbetreinricht</Name>
+            <Title>Betriebseinrichtungen</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itzone</Name>
+            <Title>Zone</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itunfallart</Name>
+            <Title>Unfalldaten-Unfallart</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itstrbpzeit</Name>
+            <Title>Straßenbäume-Pflanzzeit</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbgart</Name>
+            <Title>Begleitgrün-Art</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otbegleitgr</Name>
+            <Title>Begleitgrün</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbsart</Name>
+            <Title>Betriebsstätten-Art</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otzunote</Name>
+            <Title>Zustandsbenotung</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otzugroesse</Name>
+            <Title>Bewertete Zustandsgröße</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itvschaltart</Name>
+            <Title>Vorschalteinrichtung-Art</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itebfkamera</Name>
+            <Title>Einzelbildfolge-Kamera</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itstrbhba</Name>
+            <Title>Straßenbäume-Hauptbaumart</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itmarktyp</Name>
+            <Title>Markierungen-Typ</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Objdelsek</Name>
+            <Title>Objektänderungsprotokoll (sekundär)</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otteilnetz</Name>
+            <Title>Teilnetz</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otlsamast</Name>
+            <Title>Lichtsignalanlagen - Masten</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbaulast</Name>
+            <Title>Baulast</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itstatart</Name>
+            <Title>Stationszeichen-Art</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otbaumstprot</Name>
+            <Title>Baum (ST) - Baumprotokoll</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itrwnutzart</Name>
+            <Title>Nutzungsart erweitert-Art</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itvschaltbauw</Name>
+            <Title>Vorschalteinrichtung-Bauweise</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otstreifenfkt</Name>
+            <Title>Streifenfunktion</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otnabeschild</Name>
+            <Title>Nicht Amtliche Beschilderung</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itebart</Name>
+            <Title>Einzelbaum-Art</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itschutzbew</Name>
+            <Title>Schutzeinrichtung für Tiere-Bewuchs</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbahngleise</Name>
+            <Title>Kreuzende Bahnen-Bahngleise</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbwart</Name>
+            <Title>Bauwerke-Art</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itumwsicher</Name>
+            <Title>Aufbau 2.0 - Umweltrelev. Infos-Art d. techn. Sicherung</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itumwreststoff</Name>
+            <Title>Aufbau 2.0 - Umweltrelev. Infos-Art Reststoff</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itdauereinricht</Name>
+            <Title>Straßenausstattung (streckenbezogen) - Dauereinrichtung</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itschachtuteil</Name>
+            <Title>Schacht-Unterteil</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itrwzielname</Name>
+            <Title>Ziele-Name</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itqpruefergebnis</Name>
+            <Title>Querschnitte 2.0-Fehlerprotokoll</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itgestart</Name>
+            <Title>Gestattungen - Art</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itnutzung</Name>
+            <Title>Nutzungs-/Streckenart-Nutzung</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbaumart</Name>
+            <Title>Baum (SN) Code - Baumart/Gattung</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otlsa</Name>
+            <Title>Lichtsignalanlagen</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itzudecksch</Name>
+            <Title>Zustandsklasse-Deckschicht</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itsbwfkt</Name>
+            <Title>Sonstige Konstruktion-Funktion</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbstentwphase</Name>
+            <Title>Baum (ST)-Entwicklungsphase</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otbaumsttat</Name>
+            <Title>Baum (ST) - Tatbestand</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itstrausstrart</Name>
+            <Title>Straßenausstattung (streckenbezogen)-Art</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbstpzustand</Name>
+            <Title>Baum (ST)-Zustand</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itstatbeton</Name>
+            <Title>Stationszeichen-Betoniert</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itcharust</Name>
+            <Title>Unfalldaten-Charakteristik Unfallstelle</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbwlagebw</Name>
+            <Title>Bauwerke-Lage BW</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbrbklage</Name>
+            <Title>Bohrkerne-Lage</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itquerpart3</Name>
+            <Title>Querschnitte-Partieller Baulastträger Dritter</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itstaat</Name>
+            <Title>Staat</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itsbwart</Name>
+            <Title>Sonstige Konstruktion-Art</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itunflsa</Name>
+            <Title>Unfalldaten-Lsa</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbesstrbezug</Name>
+            <Title>Straßenbezug</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otbflaeche</Name>
+            <Title>Befestigte Flächen (UI)</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itnzattribut</Name>
+            <Title>Teilnetz-Attribut</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itvideoricht</Name>
+            <Title>Video-Richtung</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itwidmung</Name>
+            <Title>Widmung</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itland</Name>
+            <Title>Bundesland</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otgestattung</Name>
+            <Title>Gestattungen</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itdokart</Name>
+            <Title>Dokumente - Art</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itsptyp</Name>
+            <Title>Schutzplanken-Typ</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itvzeichnum</Name>
+            <Title>Verkehrszeichen-Nummer</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itvzgroesse</Name>
+            <Title>Verkehrszeichen-Größenklasse</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itschibind1</Name>
+            <Title>Aufbaudaten-Bindemittel 1</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itschibind2</Name>
+            <Title>Aufbaudaten-Bindemittel 2</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbstsicherwart</Name>
+            <Title>Baum (ST)-Sicherheitserwartung</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itepsgcode</Name>
+            <Title>EPSG-Code</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Ituflbewuchs</Name>
+            <Title>Unbefestigte Flächen (UI)-Bewuchsart</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itquerart</Name>
+            <Title>Querschnitte-Streifenart</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Ituipflichtiger</Name>
+            <Title>UI-Pflichtiger</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itfrfunktion</Name>
+            <Title>Fußgänger-Rückhaltesysteme-Funktion</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbestyp</Name>
+            <Title>Beschilderung-Typ</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otunterhalt</Name>
+            <Title>UI-/UA-Vereinbarung</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itvfuehrung</Name>
+            <Title>Verkehrsführung</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otrabeschild</Name>
+            <Title>Beschilderung (UI)</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itlaermart</Name>
+            <Title>Aktiver Lärmschutz-Art</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itvzstvoznr</Name>
+            <Title>Verkehrszeichen-STVO-ZNr.</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itebgattung</Name>
+            <Title>Einzelbaum-Gattung</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otstrbaum</Name>
+            <Title>Straßenbäume</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbwlagefb</Name>
+            <Title>Bauwerke-Lage FB</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itufleinheit</Name>
+            <Title>Unbefestigte Flächen (UI)-Einheit</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itregbez</Name>
+            <Title>Regierungsbezirk</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otzst</Name>
+            <Title>Zählstellen</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otwidmung</Name>
+            <Title>Widmung</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbahnsicher</Name>
+            <Title>Kreuzende Bahnen-Bahnsicherung</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otmarkierung</Name>
+            <Title>Markierungen</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbaulasteig</Name>
+            <Title>Baulast-Eigentümer</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otbrbkanalyse</Name>
+            <Title>Bohrkernanalysedaten</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otland</Name>
+            <Title>Verwaltungsbezirk - Land</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itrabeschart</Name>
+            <Title>Beschilderung (UI)-Art</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itvzeichlage</Name>
+            <Title>Verkehrszeichen-Lage</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itspfunktion</Name>
+            <Title>Schutzplanken-Funktion</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itstrbdichte</Name>
+            <Title>Straßenbäume-Dichte der Baumreihe</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbaulast3</Name>
+            <Title>Baulast-Dritter</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itrwmaengart</Name>
+            <Title>Mängel-Art</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itvsmnart</Name>
+            <Title>Unfallhäufungsmaßnahme-Maßnahmeart</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Ithivkrbeschr</Name>
+            <Title>Hindernisse-Raumangabe</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otzuklasse</Name>
+            <Title>Zustandsklasse</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itltgart</Name>
+            <Title>Leitungen-Art</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itaufprall</Name>
+            <Title>Unfalldaten-Aufprall</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itstrbzinfos</Name>
+            <Title>Straßenbäume-Zusatzinformationen</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itstreckenart</Name>
+            <Title>Nutzungs-/Streckenart-Streckenart</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itnzklasse</Name>
+            <Title>Teilnetz-Klasse</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbstrtaxi</Name>
+            <Title>Busstreifen-Taxi</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itstadium</Name>
+            <Title>Stadium</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbrazustand</Name>
+            <Title>Alleen (Brandenburg)-Zustand</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otunfdat</Name>
+            <Title>Unfalldaten</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itwegaktuell</Name>
+            <Title>Wegeart (Aktuell/Analytisch/Disponiert/Vorherig)</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itvzausfuehr</Name>
+            <Title>Verkehrszeichen-Ausführung</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itrwmaengprio</Name>
+            <Title>Mängel-Priorität</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otvzeichlp</Name>
+            <Title>Verkehrszeichen</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itaufmat3</Name>
+            <Title>Aufbaudaten 2.0-Material 3</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itschachtart</Name>
+            <Title>Schacht-Art</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otesn</Name>
+            <Title>Sicherheitsanalyse (ESN)</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itaufmat1</Name>
+            <Title>Aufbaudaten 2.0-Material 1</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itaufmat2</Name>
+            <Title>Aufbaudaten 2.0-Material 2</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itjun</Name>
+            <Title>JUN</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itdllage</Name>
+            <Title>Durchlässe-Lage</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itnabpikto</Name>
+            <Title>Nichtamtliche Beschilderung-Piktogramm</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otschicht</Name>
+            <Title>Aufbaudaten</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itmeisterei</Name>
+            <Title>Meisterei</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itjopese</Name>
+            <Title>Joker-P/S</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itkrhlage</Name>
+            <Title>Kreuzungen-Höhenlage</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itvbwtag</Name>
+            <Title>Verkehrsstärken-Wochentag</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itfrtyp</Name>
+            <Title>Fußgänger-Rückhaltesysteme-Typ</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbahnbebene</Name>
+            <Title>Kreuzende Bahnen-Ebene</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otregbez</Name>
+            <Title>Verwaltungsbezirk - Regierungsbezirk</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itsbwabsorb</Name>
+            <Title>Sonstige Konstruktion-Absorbtionsfähigkeit</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otausbauzust</Name>
+            <Title>Ausbauzustand</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itzstberchr</Name>
+            <Title>Zählstellenbereich-Charakter des Zählabschnittes</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itvzlagefb</Name>
+            <Title>Lage Schild</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otnsart</Name>
+            <Title>Nutzungsart/Streckenart</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Ithieigentuemer</Name>
+            <Title>Hindernisse-Eigentümer</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otbrbohrkern</Name>
+            <Title>Bohrkerne</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itstrbzustand</Name>
+            <Title>Straßenbäume-Zustand der Allee</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Babknoten</Name>
+            <Title>Babknoten</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itschichtkennz</Name>
+            <Title>Aufbaudaten-Kennz.</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itvideocam</Name>
+            <Title>Video-Kamera</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itmarkart</Name>
+            <Title>Markierungen-Art</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itwesart</Name>
+            <Title>Wassereinleitungsstrecke-Art</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itlaermlage</Name>
+            <Title>Aktiver Lärmschutz-Lage</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itunfursache</Name>
+            <Title>Unfalldaten-Ursache</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itnabart</Name>
+            <Title>Nichtamtliche Beschilderung-Art</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itkvueberfahrbar</Name>
+            <Title>Kreisverkehr-Überfahrbar</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Netz</Name>
+            <Title>Netz</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itswbauart</Name>
+            <Title>Schutzwand-Bauart</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itkvart</Name>
+            <Title>Kreisverkehr-Art</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itspart</Name>
+            <Title>Schutzplanken-Art</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otapneig</Name>
+            <Title>Aufrisse (Fahrbahnlängs- und -querneigung)</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbstbaumart</Name>
+            <Title>Baum (ST)-Baumart</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otschutzpl</Name>
+            <Title>Schutzplanken</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itspstandort</Name>
+            <Title>Schutzplanken-Standort</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otverband</Name>
+            <Title>Verbände</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otunfstat</Name>
+            <Title>Unfallstatistik</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itallgurs</Name>
+            <Title>Unfalldaten-allgemeine Ursache</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Projekt</Name>
+            <Title>Ereignisraum</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itswstandort</Name>
+            <Title>Schutzwand-Standort</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otzstber</Name>
+            <Title>Gültigkeitsbereich der Zählstelle</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Ithiabbaubar</Name>
+            <Title>Hindernisse-Abbaubar</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itltgmatrohr</Name>
+            <Title>Leitungen-Material des Schutzrohrs</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itwidmfall</Name>
+            <Title>Widmung-Widmungsfall</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itzstart</Name>
+            <Title>Zählstellen-Art</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otmassnahmen</Name>
+            <Title>Maßnahmen</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbesstvoznr</Name>
+            <Title>Beschilderung-STVO-ZNr.</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itlwabsorbtion</Name>
+            <Title>Lärmschutzwall-Absorbtionsfähigkeit</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otbaumstumfeld</Name>
+            <Title>Baum (ST) - Im Baumumfeld</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itentwschacht</Name>
+            <Title>Entwässerung-Schachttiefenstufe</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itartbeteil</Name>
+            <Title>Unfalldaten-Art der Beteiligung</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itrwzielart</Name>
+            <Title>Ziele-Art</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itvzhersteller</Name>
+            <Title>Hersteller</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Kartenblatt</Name>
+            <Title>Kartenblatt</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itquelle</Name>
+            <Title>Quelle</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otbaumststamm</Name>
+            <Title>Baum (ST) - Am Stamm</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itraschutzmat</Name>
+            <Title>Schutzeinrichtungen (UI)-Material</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>AsbStr</Name>
+            <Title>ASB Straße</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otrastanlage</Name>
+            <Title>Rastanlagen</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itkvuipartner</Name>
+            <Title>Kreisverkehr-UI-Partner</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itaufdeta</Name>
+            <Title>Aufbaudaten 2.0-Detail A</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otstaat</Name>
+            <Title>Verwaltungsbezirk - Staat</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itaufdetc</Name>
+            <Title>Aufbaudaten 2.0-Detail C</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otstrablauf</Name>
+            <Title>Straßenablauf</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itaufdetb</Name>
+            <Title>Aufbaudaten 2.0-Detail B</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itabsebene</Name>
+            <Title>Abschnittsebene-Ebene</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itmarklage</Name>
+            <Title>Markierungen-Lage</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Stobjekte</Name>
+            <Title>Objektliste</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itaufdetd</Name>
+            <Title>Aufbaudaten 2.0-Detail D</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itschidetd</Name>
+            <Title>Aufbaudaten-Detail D</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itschidetc</Name>
+            <Title>Aufbaudaten-Detail C</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itdumstart</Name>
+            <Title>Umstufungsart</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itschidetb</Name>
+            <Title>Aufbaudaten-Detail B</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbfldeckart</Name>
+            <Title>Befestigte Flächen (UI)-Deckschichtart</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itschideta</Name>
+            <Title>Aufbaudaten-Detail A</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itvbfakstreif</Name>
+            <Title>Fahrstreifenfaktor</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itstatlaenge</Name>
+            <Title>Stationszeichen-Länge</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itwesfliessricht</Name>
+            <Title>Wassereinleitungsstrecke-Fließrichtung</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itrwnetzkat</Name>
+            <Title>Netzkategorie-Kategorie</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbravollst</Name>
+            <Title>Alleen (Brandenburg)-vollständig</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itstrecke</Name>
+            <Title>OD/Freie Strecke</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otkompmassn</Name>
+            <Title>Kompensationsmaßnahmen</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Ithiart</Name>
+            <Title>Hindernisse-Art</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itfrmaterial</Name>
+            <Title>Fußgänger-Rückhaltesysteme-Material</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otfahrstr</Name>
+            <Title>Fahrstreifen</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itnabverlauf</Name>
+            <Title>Nichtamtliche Beschilderung-Verlaufsrichtung</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itausmat</Name>
+            <Title>Ausstattung (UI)-Material</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbrbkverb</Name>
+            <Title>Bohrkerne-Verbund</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itvebereich</Name>
+            <Title>Ortsdurchfahrten-V/E- Bereich</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otbaumstkrone</Name>
+            <Title>Baum (ST) - In der Krone</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itmeinheit</Name>
+            <Title>UIGewerke-Mengeneinheit</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itposnr</Name>
+            <Title>UIGewerke-Positionsnummer</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbesondust</Name>
+            <Title>Unfalldaten-Besonderheit Unfallstelle</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Iterfart</Name>
+            <Title>Art d. Erfassung</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otwassereinlstr</Name>
+            <Title>Wassereinleitungsstrecke</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbrahbaum</Name>
+            <Title>Alleen (Brandenburg)-Hauptbaumart</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbahnart</Name>
+            <Title>Kreuzende Bahnen-Bahnart</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otbaumst</Name>
+            <Title>Baum (ST)</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itgem</Name>
+            <Title>Gemeinde</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbfluipflicht</Name>
+            <Title>Befestigte Flächen (UI)-Unterhaltungspflicht</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Ithoehenbzgstm</Name>
+            <Title>Höhenbezugssystem</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itlaermbaust</Name>
+            <Title>Aktiver Lärmschutz-Baustoff</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Iterhebung9</Name>
+            <Title>Unfalldaten-Sondererhebung 9</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbsttgruppe</Name>
+            <Title>Baum (ST)-Gruppe (Tatbestand)</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itlsaart</Name>
+            <Title>Lichtsignalanlagen-Art</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itzsttyp</Name>
+            <Title>Zählstellen-Typ</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Iterhebung6</Name>
+            <Title>Unfalldaten-Sondererhebung 6</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Iterhebung5</Name>
+            <Title>Unfalldaten-Sondererhebung 5</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Iterhebung8</Name>
+            <Title>Unfalldaten-Sondererhebung 8</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbsteigentuemer</Name>
+            <Title>Baum (ST)-Eigentümer</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Iterhebung7</Name>
+            <Title>Unfalldaten-Sondererhebung 7</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Iterhebung2</Name>
+            <Title>Unfalldaten-Sondererhebung 2</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Iterhebung1</Name>
+            <Title>Unfalldaten-Sondererhebung 1</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Iterhebung4</Name>
+            <Title>Unfalldaten-Sondererhebung 4</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Iterhebung3</Name>
+            <Title>Unfalldaten-Sondererhebung 3</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>ItabsHerklen</Name>
+            <Title>Herkunft/Genauigkeit der Länge</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itltgfblage</Name>
+            <Title>Leitungen-Lage bzgl. der Fahrbahn</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itebfborside</Name>
+            <Title>Einzelbildfolge-Boresightvektor</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itsbwumat</Name>
+            <Title>Sonstige Konstruktion-überwiegendes Material</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itentwobjtyp</Name>
+            <Title>Entwässerung-Objtyp</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itgeschwind</Name>
+            <Title>Geschwindigkeit</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itschugeo</Name>
+            <Title>Umweltrelevanz-Hydrogeologisch</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbauklart</Name>
+            <Title>Bauklasse-Art</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itherkkoord</Name>
+            <Title>Herkunft Koordinaten</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itswfunktion</Name>
+            <Title>Schutzwand-Funktion</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itweganalytisch</Name>
+            <Title>Wegeart-Analytisch</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbraumgebung</Name>
+            <Title>Alleen (Brandenburg)-Umgebung</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itzstdue</Name>
+            <Title>Zählstellen-Übermittlungsart</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbetreiber</Name>
+            <Title>Gestattungen/Leitungen-Betreiber</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itstatbez2</Name>
+            <Title>Stationszeichen-Bezeichnung  2</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itrawendemgl</Name>
+            <Title>Rastanlagen-Wendemöglichkeit</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itstatbez1</Name>
+            <Title>Stationszeichen-Bezeichnung 1</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbrbkkennz</Name>
+            <Title>Bohrkerne-Kennzeichen</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Objdel</Name>
+            <Title>Objektänderungsprotokoll</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbglage</Name>
+            <Title>Begleitgrün-Lage</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbrplmassn</Name>
+            <Title>Planung (BB)-Massnahme</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otmeisterei</Name>
+            <Title>Dienststelle - Meisterei</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itlwmaterial</Name>
+            <Title>Lärmschutzwall-Material</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otstrausser</Name>
+            <Title>Straßenausstattung (seriell)</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbfleinheit</Name>
+            <Title>Befestigte Flächen (UI)-Einheit</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itvschaltentl</Name>
+            <Title>Vorschalteinrichtung-Entleerung</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itvschaltui</Name>
+            <Title>Vorschalteinrichtung-Straßenunterhaltungspflicht</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itschimat3</Name>
+            <Title>Aufbaudaten-Material 3</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itschimat2</Name>
+            <Title>Aufbaudaten-Material 2</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Ituart</Name>
+            <Title>UI-/UA-Art</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itschimat1</Name>
+            <Title>Aufbaudaten-Material 1</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbahnstadium</Name>
+            <Title>Kreuzende Bahnen-Stadium</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otbild</Name>
+            <Title>Bildinformationen</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Othindernis</Name>
+            <Title>Hindernisse</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itvschaltspindel</Name>
+            <Title>Vorschalteinrichtung-Spindel</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otstrauspkt</Name>
+            <Title>Straßenausstattung (punktuell)</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itstrzust</Name>
+            <Title>Unfalldaten-Straßenzustand</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itzststatus</Name>
+            <Title>Zählstellen-Status</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itprekat</Name>
+            <Title>Kategorie des Ereignisraumes</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itvsabtyp</Name>
+            <Title>Unfallhäufungsteilbereich-Abschnittstyp</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itdlzunote</Name>
+            <Title>Durchlässe-Zustandsnote</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbrplreal</Name>
+            <Title>Planung (BB)-realisiert</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otsonstkonst</Name>
+            <Title>Sonstige Konstruktion</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itkrfussueweg</Name>
+            <Title>Kreuzungen-Art Fußgängerüberweg</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itstrbumgebung</Name>
+            <Title>Straßenbäume-Umgebung</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itspabsart</Name>
+            <Title>Schutzplanken-Art der Absenkung</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otdokument</Name>
+            <Title>Dokumentenverwaltung</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itmarksymb</Name>
+            <Title>Markierungen-Symbol</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itsppfostkonst</Name>
+            <Title>Schutzplanken-Pfostenkonstruktion</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itnzrichtung</Name>
+            <Title>Teilnetz-Richtung</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itquerpart</Name>
+            <Title>Querschnitte-Partielle Baulast</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itkrvorrang</Name>
+            <Title>Kreuzungen-Vorrangregelung</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itvbfakbreit</Name>
+            <Title>Fahrstreifenbreitenfaktor</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itdlfunktion</Name>
+            <Title>Durchlässe-Funktion</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otvorschalteinr</Name>
+            <Title>Vorschalteinrichtungen</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otschutzwand</Name>
+            <Title>Schutzwand</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itzufslage</Name>
+            <Title>Zustandsdaten-Fahrstreifenlage</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itbstrrad</Name>
+            <Title>Busstreifen-Radfahrer</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>VI_NULLPUNKT</Name>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itltgmaterial</Name>
+            <Title>Leitungen-Material</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itnpart</Name>
+            <Title>Nullpunktart</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Otbahnen</Name>
+            <Title>Kreuzende Bahnen</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itvzart</Name>
+            <Title>Verkehrszeichen-Art</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itkrart</Name>
+            <Title>Kreuzungen-Art</Title>
+            <SRS></SRS>
+        </FeatureType>
+        <FeatureType>
+            <Name>Dotquer</Name>
+            <Title>Daten zu Querschnitten</Title>
+            <SRS>EPSG:2398</SRS>
+            <LatLongBoundingBox minx="4402119.8742521" maxx="4581504.2810836" miny="5645579.732492" maxy="5874709.6547698"></LatLongBoundingBox>
+        </FeatureType>
+        <FeatureType>
+            <Name>Itvzbauart</Name>
+            <Title>Verkehrszeichen-Bauart</Title>
+            <SRS></SRS>
+        </FeatureType>
+    </FeatureTypeList>
+    <ogc:Filter_Capabilities>
+        <ogc:Spatial_Capabilities>
+            <ogc:Spatial_Operators>
+                <ogc:BBOX></ogc:BBOX>
+                <ogc:DWithin></ogc:DWithin>
+            </ogc:Spatial_Operators>
+        </ogc:Spatial_Capabilities>
+        <ogc:Scalar_Capabilities>
+            <ogc:Logical_Operators></ogc:Logical_Operators>
+            <ogc:Comparison_Operators>
+                <ogc:Simple_Comparisons></ogc:Simple_Comparisons>
+                <ogc:Like></ogc:Like>
+                <ogc:Between></ogc:Between>
+                <ogc:NullCheck></ogc:NullCheck>
+            </ogc:Comparison_Operators>
+        </ogc:Scalar_Capabilities>
+    </ogc:Filter_Capabilities>
+</WFS_Capabilities>
