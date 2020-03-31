@@ -1,5 +1,9 @@
 *.class
+
 .idea/**
+!.idea/runConfigurations/
+!.idea/runConfigurations/**
+
 .svn
 *.iml
 logs/**
