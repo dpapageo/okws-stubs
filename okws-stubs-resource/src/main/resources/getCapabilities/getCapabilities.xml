@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='ISO-8859-1' ?>
 <WFS_Capabilities 
-    xmlns="http://www.opengis.net/wfs" 
-    xmlns:wfs="http://www.opengis.net/wfs" 
+    xmlns="http://www.opengis.net/wfs/2.0"
+    xmlns:wfs="http://www.opengis.net/wfs/2.0"
     xmlns:ogc="http://www.opengis.net/ogc" 
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/wfs http://schemas.opengis.net/wfs/1.0.0/WFS-capabilities.xsd" version="1.0.0">
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/wfs/2.0" version="2.0">
     <Service>
         <Name>TT-SIB5:WFS</Name>
         <Title>TT-SIB Public WFS 5.12.1</Title>
